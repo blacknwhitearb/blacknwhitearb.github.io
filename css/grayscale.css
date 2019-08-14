@@ -48,7 +48,7 @@
   }
   #mainNav .navbar-brand {
     padding: .5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
   }
   #mainNav .nav-link {
     -webkit-transition: none;
@@ -90,8 +90,8 @@
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 20rem;
-  padding: 5rem 0;
+  min-height: 40rem;
+  padding: 15rem 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.7)), to(#161616)), url("../img/bg-masthead.jpg");
   background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
   background-position: center;
@@ -102,17 +102,16 @@
 
 .masthead h1 {
   font-family: 'Varela Round';
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  font-size: 6.5rem;
+  line-height: 6.5rem;
   letter-spacing: 0.8rem;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
-.masthead h2 {
-  max-width: 20rem;
-  font-size: 1rem;
+.masthead a {
+  margin-top: 4rem;
 }
 
 @media (min-width: 768px) {
@@ -133,8 +132,13 @@
     letter-spacing: 0.8rem;
   }
   .masthead h2 {
-    max-width: 30rem;
-    font-size: 1.25rem;
+    font-size: 3.5rem;
+  }  
+  .masthead h3 {
+    font-size: 2rem;
+  }
+  .masthead h4 {
+    font-size: 1rem;
   }
 }
 
@@ -167,11 +171,14 @@
 }
 
 .about-section {
-  padding-top: 10rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%), url('../img/black-and-white-tree.png');
+  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
   background-position: center;
   background-repeat: no-repeat;
+  font-size: 2rem;
+  line-height: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .about-section p {
@@ -209,30 +216,8 @@
   }
 }
 
-.signup-section {
-  padding: 10rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-signup.jpg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-
-.signup-section .form-inline input {
-  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  height: auto;
-  font-family: 'Varela Round';
-  font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  border: 0;
-}
-
 .contact-section {
-  padding: 5rem 0 0;
+  padding: 2rem 0 0;
 }
 
 .contact-section .card {
