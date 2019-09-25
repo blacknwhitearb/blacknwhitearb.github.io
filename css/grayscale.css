@@ -111,7 +111,7 @@
   -webkit-background-clip: text;
 }
 
-.masthead h2, h3 {
+.masthead h2, .masthead h3 {
   background: -webkit-linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -261,6 +261,13 @@
 
 .contact-section {
   padding: 2rem 0 0;
+}
+
+.contact-image {
+  min-width: 248px;
+  max-width: 248px;
+  flex-basis: auto; /* default value */
+  flex-grow: 0;
 }
 
 .contact-section .card {
