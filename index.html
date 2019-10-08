@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
   <meta charset="utf-8">
@@ -22,17 +21,16 @@
   <link href="css/grayscale.css" rel="stylesheet" type="text/css" >
 
   <!-- jQuery 1.8 or later, 33 KB -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-  <!-- Fotorama from CDNJS, 19 KB -->
-  <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  
+  <!-- Fotorama -->  
+  <link href="css/fotorama.css" rel="stylesheet">
+  <script src="js/fotorama.js"></script>
 
 </head>
 
 <body id="page-top">
 
-  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Christchurch Garden Services</a>
@@ -44,11 +42,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
-          <!--
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
           </li>
-          -->
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
@@ -57,7 +53,6 @@
     </div>
   </nav>
 
-  <!-- Header -->
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
@@ -66,13 +61,13 @@
         <h2 class="text-light">Tree and Garden Services</h2>
         <h3 class="text-light">Qualified Arborist and Landscape Gardener</h3>
         <h3 class="text-light">Call Rick: 020&nbsp;414&nbsp;54337</h3>
-        <a href="#about" class="btn btn-primary js-scroll-trigger">Services</a>
+        <a href="#about" class="btn btn-primary js-scroll-trigger">More Details</a>
       </div>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="about-section left-justify">
+  <section id="about" class="text-section left-justify">
+
     <div class="flex-row">
       <div class="container">
         <div class="row">
@@ -92,11 +87,17 @@
       </div>    
     </div>
 
+  </section>
+
+  <section id="services" class="text-section bg-black">
+
     <div class="flex-row">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 mx-auto">
+
             <h1 class="text-white mb-4">Services</h2>
+
             <ul class="text-white-50">
               <li>Formative&nbsp;pruning&nbsp;of juvenile&nbsp;and&nbsp;established trees</li>
               <li>Hedge trimming</li>
@@ -105,37 +106,42 @@
               <li>Weeding</li>
               <li>Edging</li>
             </ul>
+
+            <div class="fotorama"
+              data-nav="thumbs"
+              data-fit="cover"          
+              data-autoplay="3000"
+              data-arrows="true"
+              data-click="true"
+              data-swipe="true"
+              data-trackpad="true"
+              data-transition="crossfade">
+                <a href="img/carousel/1_IMG_0797.jpg" data-caption="before"><img src="img/carousel/tiny/1_IMG_0797-thumb.jpg"></a>
+                <a href="img/carousel/1_IMG_0807.jpg" data-caption="after"><img src="img/carousel/tiny/1_IMG_0807-thumb.jpg"></a>
+                <a href="img/carousel/2_IMG_0798.jpg" data-caption="before"><img src="img/carousel/tiny/2_IMG_0798-thumb.jpg"></a>
+                <a href="img/carousel/2_IMG_0808.jpg" data-caption="after"><img src="img/carousel/tiny/2_IMG_0808-thumb.jpg"></a>
+                <a href="img/carousel/4_IMG_0947.jpg" data-caption="before"><img src="img/carousel/tiny/4_IMG_0947-thumb.jpg"></a>
+                <a href="img/carousel/4_IMG_0948.jpg" data-caption="during"><img src="img/carousel/tiny/4_IMG_0948-thumb.jpg"></a>
+                <a href="img/carousel/4_IMG_0950.jpg" data-caption="after"><img src="img/carousel/tiny/4_IMG_0950-thumb.jpg"></a>
+                <a href="img/carousel/5_IMG_0965.jpg" data-caption="before"><img src="img/carousel/tiny/5_IMG_0965-thumb.jpg"></a>
+                <a href="img/carousel/5_IMG_0968.jpg" data-caption="during"><img src="img/carousel/tiny/5_IMG_0968-thumb.jpg"></a>
+                <a href="img/carousel/5_IMG_0970.jpg" data-caption="after"><img src="img/carousel/tiny/5_IMG_0970-thumb.jpg"></a>
+                <a href="img/carousel/6_IMG_0979.jpg" data-caption="before"><img src="img/carousel/tiny/6_IMG_0979-thumb.jpg"></a>
+                <a href="img/carousel/6_IMG_0986.jpg" data-caption="during"><img src="img/carousel/tiny/6_IMG_0986-thumb.jpg"></a>
+                <a href="img/carousel/7.1_IMG_0888.jpg" data-caption="before"><img src="img/carousel/tiny/7.1_IMG_0888-thumb.jpg"></a>
+                <a href="img/carousel/7.2_IMG_0887.jpg" data-caption="before"><img src="img/carousel/tiny/7.2_IMG_0887-thumb.jpg"></a>
+                <a href="img/carousel/7.3_IMG_0940.jpg" data-caption="after"><img src="img/carousel/tiny/7.3_IMG_0940-thumb.jpg"></a>
+                <a href="img/carousel/8.1.jpg" data-caption="before"><img src="img/carousel/tiny/8.1-thumb.jpg"></a>
+                <a href="img/carousel/8.2.jpg" data-caption="after"><img src="img/carousel/tiny/8.2-thumb.jpg"></a>
+            </div>
+
           </div>
         </div>
       </div>    
     </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects-section bg-black">
-
-    <div class="container">
-      <div class="col-md-12">
-        <div class="fotorama"
-          data-fit="cover"          
-          data-autoplay="true"
-          data-arrows="true"
-          data-click="true"
-          data-swipe="true"
-          data-trackpad="true"
-          data-transition="slide"
-          data-clicktransition="crossfade">
-
-          <a href="img/problem1.jpg" data-thumb="img/problem1.jpg" data-caption="before"></a>
-          <a href="img/solution1.jpg" data-thumb="img/solution1.jpg" data-caption="after"></a>
-
-        </div>
-      </div>
-    </div>
 
   </section>
 
-  <!-- Contact Section -->
   <section id="contact" class="contact-section bg-black">
     <div class="container">
       <div class="row">
@@ -143,7 +149,7 @@
         <div class="col-md-6 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body text-center">
-              <h3 class="text-black-80">Contact Me</h4>
+              <h3 class="text-black-80">Contact me</h4>
               <hr class="my-4">            
               <img width="200px" height="200px" src="img/rick.jpg" alt="Rick the arborist and gardener. Tidying gardens in Christchurch, New Zealand">
             </div>
@@ -165,7 +171,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
       Copyright &copy; Black and White Tree and Garden Services New Zealand
@@ -174,27 +179,13 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script type="text/javascript" src="js/grayscale.min.js"></script>
-
-
-
-<script type="text/javascript">
-
-$(window).load(function() {
-    $("#flexiselDemo1").flexisel();
-    $("#myCarousel").flexisel();
-    
-});
-</script>
-    
+  <script src="js/grayscale.min.js"></script>
 
 </body>
-
 </html>
